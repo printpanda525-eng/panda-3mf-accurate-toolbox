@@ -1,6 +1,3 @@
-
-⚠️ This repository is used for documentation and issue tracking only. The Panda 3MF Accurate Toolbox source code is not publicly available.
-
 # Panda 3MF Accurate Toolbox
 
 **Panda 3MF Accurate Toolbox** is a professional Blender addon focused on accurate and reliable **3MF import/export workflows for real-world 3D printing**.
