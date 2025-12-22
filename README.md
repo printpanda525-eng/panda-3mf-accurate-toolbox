@@ -65,7 +65,7 @@ This addon is designed for users who need precise scale handling, clean export p
 | Batch Export (Plates) | ✖ | ✔ |
 | Virtual Build Plate | ✖ | ✔ |
 | Transform Tools | Limited | ✔ |
-| Real Size Measurements | ✖ | ✔ |
+| Real Size Measurements | ✔ | ✔ |
 | Advanced Workflow Tools | ✖ | ✔ |
 
 ---
