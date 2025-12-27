@@ -1,113 +1,137 @@
-# Panda 3MF Accurate Toolbox
+Panda 3MF Accurate Toolbox
 
-**Panda 3MF Accurate Toolbox** is a professional Blender addon focused on accurate and reliable **3MF import/export workflows for real-world 3D printing**.
+Panda 3MF Accurate Toolbox is a professional Blender addon focused on accurate and reliable 3MF import/export workflows for real-world 3D printing.
 
-This addon is designed for users who need precise scale handling, clean export pipelines, and batch workflows directly inside Blender, without relying on external conversion tools.
+The addon is designed for users who require precise scale handling, clean export pipelines, and efficient batch workflows directly inside Blender, without relying on external conversion tools or repetitive file dialogs.
 
----
+🔧 Key Features
+3MF Import / Export
 
-## 🔧 Key Features
+Import and export 3MF files directly in Blender.
 
-- **3MF Import / Export**
-  - Import and export 3MF files directly in Blender.
-  - Quick export workflow using the current `.blend` file location.
-  - Optional ignoring of artistic transforms for print-accurate geometry.
+Fast export workflow with a configurable export folder.
 
-- **Batch Export by Build Plates**
-  - Export multiple build plates in a single operation.
-  - Each plate is exported as a separate 3MF file.
-  - Automatic validation against build plate dimensions.
+Visual feedback when export settings are incomplete.
 
-- **Virtual Build Plate**
-  - Visualize a printer build plate directly inside Blender.
-  - Helps organize and prepare models before slicing.
-  - Designed as a visual aid, not a slicer replacement.
+Optional ignoring of artistic transforms for print-accurate geometry.
 
-- **Transform Tools for 3D Printing**
-  - Align objects to the build surface (Z axis).
-  - Reset and apply transforms safely.
-  - Prepare geometry for reliable slicing and printing.
+Export Folder Workflow
 
-- **Real Size Measurements**
-  - Display accurate X / Y / Z dimensions in millimeters.
-  - Values match slicer dimensions for scale verification.
+Select an export folder directly from the addon panel.
 
----
+The export folder field is highlighted in red when no folder is selected.
 
-## 🧩 Typical Workflow
+Once configured, all exports are sent automatically to the selected location.
 
-1. Model or import geometry into Blender.
-2. Verify real-world size using the Measurements panel.
-3. Align objects and apply transforms if needed.
-4. (Optional) Use the Virtual Build Plate to organize parts.
-5. Export using **Export 3MF** or **Export Plates**.
-6. Open the exported file in your preferred slicer (Orca, Bambu Studio, PrusaSlicer, Cura, etc.).
+If the Blender project is not yet saved, the addon prompts to save the .blend file during the first export.
 
----
+Subsequent exports run instantly without additional dialogs.
 
-## ⚠️ Limitations
+Batch Export by Build Plates
 
-- This addon **does not fix geometry** or make models printable.
-- No automatic detection or correction of non-manifold meshes.
-- Final print validation is always performed by the slicer.
-- Geometry is exported exactly as it exists in the Blender scene.
+Export multiple build plates in a single operation.
 
----
+Each child collection under the Plates collection is exported as a separate 3MF file.
 
-## 🆓 Free vs Accurate Version
+Automatic validation against configured build plate dimensions.
 
-| Feature | Panda 3MF Toolbox (Free) | Panda 3MF Accurate Toolbox |
-|------|--------------------------|----------------------------|
-| Basic 3MF Export | ✔ | ✔ |
-| Batch Export (Plates) | ✖ | ✔ |
-| Virtual Build Plate | ✖ | ✔ |
-| Transform Tools | Limited | ✔ |
-| Real Size Measurements | ✔ | ✔ |
-| Advanced Workflow Tools | ✖ | ✔ |
+Virtual Build Plate
 
----
+Visualize a printer build plate directly inside Blender.
 
-## 📦 Availability
+Helps organize and prepare models before slicing.
 
-- **Free Version**  
-  Available through **Blender Extensions**.
+Designed as a visual aid, not a slicer replacement.
 
-- **Panda 3MF Accurate Toolbox (Paid Version)**  
-  Available via Gumroad (link below).
+Transform Tools for 3D Printing
 
----
+Align objects to the build surface (Z axis).
 
-## 🛒 Purchase
+Reset and apply transforms safely.
 
-You can purchase the **Panda 3MF Accurate Toolbox** here:
+Prepare geometry for reliable slicing and printing.
 
-👉 *(Add your Gumroad link here)*
+Real Size Measurements
 
----
+Display accurate X / Y / Z dimensions in millimeters.
 
-## 🐞 Bug Reports & Support
+Values correspond directly to slicer-reported dimensions.
+
+🧩 Typical Workflow
+
+Model or import geometry into Blender.
+
+Verify real-world size using the Measurements panel.
+
+Align objects and apply transforms if needed.
+
+(Optional) Use the Virtual Build Plate to organize parts.
+
+Select an export folder.
+
+Export using Export 3MF or Export Plates.
+
+Open the exported file in your preferred slicer
+(Orca, Bambu Studio, PrusaSlicer, Cura, etc.).
+
+⚠️ Limitations
+
+This addon does not fix geometry or make models printable.
+
+No automatic detection or correction of non-manifold meshes.
+
+Final print validation is always performed by the slicer.
+
+Geometry is exported exactly as it exists in the Blender scene.
+
+🆓 Free vs Accurate Version
+Feature	Panda 3MF Toolbox (Free)	Panda 3MF Accurate Toolbox
+Basic 3MF Import / Export	✔	✔
+Export Folder Workflow	✔	✔
+Batch Export (Plates)	✖	✔
+Virtual Build Plate	✖	✔
+Transform Tools	Limited	✔
+Real Size Measurements	✔	✔
+Advanced Workflow Tools	✖	✔
+📦 Availability
+Free Version
+
+Available through Blender Extensions.
+
+Panda 3MF Accurate Toolbox (Paid Version)
+
+Available via Gumroad.
+
+🛒 Purchase
+
+You can purchase the Panda 3MF Accurate Toolbox here:
+
+👉 (Gumroad link coming soon)
+
+🐞 Bug Reports & Support
 
 This repository is used for:
-- Documentation
-- Issue tracking
-- User support
 
-⚠️ **The source code of Panda 3MF Accurate Toolbox is not publicly available.**
+Documentation
 
-If you encounter a bug or unexpected behavior, please open an issue and include:
-- Blender version
-- Operating system
-- Steps to reproduce the problem
+Issue tracking
 
----
+User support
 
-## 📄 Documentation
+⚠️ The source code of Panda 3MF Accurate Toolbox is not publicly available.
 
-A full user manual (PDF) is included with the paid version of the addon.
+When reporting an issue, please include:
 
----
+Blender version
 
-## © Credits
+Operating system
 
-Developed and maintained by **Panda Print**.
+Steps to reproduce the problem
 
+📄 Documentation
+
+A complete PDF user manual (EN / ES) is included with the paid version of the addon.
+
+© Credits
+
+Developed and maintained by Panda Print.
