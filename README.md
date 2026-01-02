@@ -89,7 +89,14 @@ The addon is designed for users who require precise scale handling, clean export
   </tr>
 </table>
 
+---
+### Ignore Artistic Transforms
 
+This option exports the model using its real physical size, ignoring visual-only transforms applied in Blender.
+
+Use this if you scaled or rotated an object just for visualization or layout, but want to export it at its original real-world size for 3D printing.
+
+This does not modify the object in the scene.
 ---
 
 ## 📦 Availability
