@@ -3,6 +3,21 @@
 **Panda 3MF Accurate Toolbox** is a professional Blender addon focused on accurate and reliable **3MF import/export workflows for real-world 3D printing**.
 
 The addon is designed for users who require precise scale handling, clean export pipelines, and efficient batch workflows directly inside Blender, without relying on external conversion tools or repetitive file dialogs.
+---
+
+### STL vs 3MF (Focused on 3D Printing)
+
+| Feature | STL | 3MF |
+|--------|-----|-----|
+| Scale accuracy | ❌ Does not store units (mm/in) | ✅ Stores real units |
+| Import size | ❌ May import too large or too small | ✅ Imports at correct scale |
+| Model orientation | ❌ Not preserved | ✅ Preserved |
+| Printing information | ❌ Geometry only | ✅ Includes print-related data |
+| Colors / materials | ❌ Not supported | ✅ Supported (optional) |
+| Import errors in slicer | ⚠️ More common | ✅ Less frequent |
+| Manual adjustments | ⚠️ Often required | ✅ Minimal |
+| Compatibility | ✅ Very high | ✅ High (modern slicers) |
+| Recommended format | ❌ Legacy format | ✅ Modern and recommended |
 
 ---
 
