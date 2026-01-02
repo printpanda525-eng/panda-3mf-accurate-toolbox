@@ -79,11 +79,11 @@ The addon is designed for users who require precise scale handling, clean export
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/panda_free.png" width="300" />
+      <img src="images/3mf-toolb.png" width="300" />
       <br><b>Free Version</b>
     </td>
     <td align="center">
-      <img src="images/panda_accurate.png" width="300" />
+      <img src="images/accurate-3mf.png" width="300" />
       <br><b>Accurate Version</b>
     </td>
   </tr>
