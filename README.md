@@ -76,6 +76,20 @@ The addon is designed for users who require precise scale handling, clean export
 | Real Size Measurements | ✔ | ✔ |
 | Advanced Workflow Tools | ✖ | ✔ |
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/panda_free.png" width="300" />
+      <br><b>Free Version</b>
+    </td>
+    <td align="center">
+      <img src="images/panda_accurate.png" width="300" />
+      <br><b>Accurate Version</b>
+    </td>
+  </tr>
+</table>
+
+
 ---
 
 ## 📦 Availability
