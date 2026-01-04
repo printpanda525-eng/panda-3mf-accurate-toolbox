@@ -3,6 +3,7 @@
 **Panda 3MF Accurate Toolbox** is a professional Blender addon focused on accurate and reliable **3MF import/export workflows for real-world 3D printing**.
 
 The addon is designed for users who require precise scale handling, clean export pipelines, and efficient batch workflows directly inside Blender, without relying on external conversion tools or repetitive file dialogs.
+
 ---
 
 ### STL vs 3MF (Focused on 3D Printing)
@@ -26,8 +27,8 @@ The addon is designed for users who require precise scale handling, clean export
 ### 3MF Import / Export
 - Import and export 3MF files directly in Blender.
 - Fast export workflow with a configurable export folder.
-- Visual feedback when export settings are incomplete.
-- Optional ignoring of artistic transforms for print-accurate geometry.
+- Pre-export validation to prevent common transform and modifier issues.
+- Clear user feedback before exporting.
 
 ### Export Folder Workflow
 - Select an export folder directly from the addon panel.
@@ -61,7 +62,7 @@ The addon is designed for users who require precise scale handling, clean export
 
 1. Model or import geometry into Blender.
 2. Verify real-world size using the Measurements panel.
-3. Align objects and apply transforms if needed.
+3. Align objects and adjust transforms if needed.
 4. (Optional) Use the Virtual Build Plate to organize parts.
 5. Select an export folder.
 6. Export using **Export 3MF** or **Export Plates**.
@@ -70,12 +71,41 @@ The addon is designed for users who require precise scale handling, clean export
 
 ---
 
+## 🔍 Pre-Export Validation
+
+Before exporting, the addon checks for common issues that can cause problems in slicers or during printing.
+
+### What is validated:
+
+- **Active modifiers**  
+  If any mesh has active modifiers (Mirror, Subdivision, etc.), export is blocked and the user must apply them manually.  
+  This prevents missing geometry, open contours, or incomplete models in slicers.
+
+- **Unapplied object transforms**  
+  If scale or rotation is not applied, the addon lets the user decide how to proceed.
+
+### Export options:
+
+- **Apply & Export**  
+  Applies transformations **only to the exported file**, without modifying the original Blender objects.
+
+- **Continue Anyway**  
+  Exports the model exactly as it appears in Blender, keeping all transforms unapplied.
+
+### Important behavior:
+
+- The addon **never modifies the original Blender scene**
+- All corrections are applied only to a temporary export copy
+- This allows safe iteration and multiple export variants without risk
+
+---
+
 ## ⚠️ Limitations
 
 - This addon **does not fix geometry** or make models printable.
 - No automatic detection or correction of non-manifold meshes.
 - Final print validation is always performed by the slicer.
-- Geometry is exported exactly as it exists in the Blender scene.
+- Geometry is exported according to the selected export option.
 
 ---
 
@@ -105,15 +135,7 @@ The addon is designed for users who require precise scale handling, clean export
 </table>
 
 ---
-### Ignore Artistic Transforms
 
-This option exports the model using its real physical size, ignoring visual-only transforms applied in Blender.
-
-Use this if you scaled or rotated an object just for visualization or layout, but want to export it at its original real-world size for 3D printing.
-
-This does not modify the object in the scene.
-
----
 ## Recommended Blender Units for 3D Printing
 
 This addon is designed to work with Blender’s default metric configuration:
