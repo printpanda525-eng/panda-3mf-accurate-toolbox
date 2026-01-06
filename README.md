@@ -144,6 +144,7 @@ This keeps the workflow simple, predictable, and slicer-agnostic.
     </td>
   </tr>
 </table>
+
 ---
 
 ## Recommended Blender Units for 3D Printing
