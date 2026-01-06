@@ -132,6 +132,19 @@ This keeps the workflow simple, predictable, and slicer-agnostic.
 | Real Size Measurements | ✔ | ✔ |
 
 ---
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="images/V_toolb_3mf.png" width="300" />
+      <br><b>Free Version</b>
+    </td>
+    <td align="center">
+      <img src="images/V_accurate_3mf.png" width="300" />
+      <br><b>Accurate Version</b>
+    </td>
+  </tr>
+</table>
+---
 
 ## Recommended Blender Units for 3D Printing
 
