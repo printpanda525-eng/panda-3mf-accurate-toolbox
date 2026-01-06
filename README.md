@@ -128,7 +128,7 @@ This keeps the workflow simple, predictable, and slicer-agnostic.
 | Multi-Material Support | ✖ | ✔ |
 | Batch Export (Plates) | ✖ | ✔ |
 | Virtual Build Plate | ✖ | ✔ |
-| Advanced Tools | ✖ | ✔ |
+| Advanced Tools | Limited | ✔ |
 | Real Size Measurements | ✔ | ✔ |
 
 ---
