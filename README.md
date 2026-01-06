@@ -181,10 +181,9 @@ Panels:
 ## 📦 Availability
 
 ### Free Version
-Available via **Blender Extensions**.
+Free version available on **GitHub**.  
+Coming soon to **Blender Extensions** (pending approval).
 
-### Panda 3MF Accurate Toolbox
-Available via **Gumroad**.
 
 ---
 
