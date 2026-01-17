@@ -184,7 +184,6 @@ Panels:
 Free version available on **GitHub**.  
 Coming soon to **Blender Extensions** (pending approval).
 
-
 ---
 
 ## 🐞 Bug Reports & Support
